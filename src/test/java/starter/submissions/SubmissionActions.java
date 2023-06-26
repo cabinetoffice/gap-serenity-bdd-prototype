@@ -12,7 +12,7 @@ public class SubmissionActions extends UIInteractions {
     @Given("Given the /submissions/{0} endpoint")
     public void givenTheSubmissionsApiEndpoint() {
         given()
-            .baseUri("http://localhost:8080")
+            .baseUri("http://prototype:8080")
             .basePath("/submissions");
     }
 
