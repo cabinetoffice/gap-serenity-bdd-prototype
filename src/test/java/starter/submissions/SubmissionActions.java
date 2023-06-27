@@ -16,7 +16,7 @@ public class SubmissionActions extends UIInteractions {
             .basePath("/submissions");
     }
 
-    @When("The `/submissions/1`endpoint is called")
+    @When("The `/submissions/1` endpoint is called")
     public void whenTheEndpointIsCalledWithValidId() {
         when().get("/1");
     }
