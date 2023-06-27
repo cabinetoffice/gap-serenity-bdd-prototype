@@ -5,12 +5,12 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 
 @ExtendWith(SerenityJUnit5Extension.class)
-public class WhenFetchingAnExistingSubmission {
+public class WhenFetchingSubmissionsByApplicationId {
 
     SubmissionActions actions;
 
     @Test
-    public void fetchExistingSubmission() {
+    public void fetchAnExistingSubmission() {
         actions.givenTheSubmissionsApiEndpoint();
         actions.whenTheEndpointIsCalledWithValidId();
         actions.thenResponseStatusShouldBeOk();
