@@ -12,7 +12,7 @@ public class SubmissionActions extends UIInteractions {
     @Given("An application form with ID 1 exists in the system")
     public void givenTheSubmissionsApiEndpoint() {
         given()
-            .baseUri("http://prototype:8080")
+            .baseUri("http://api:8080")
             .basePath("/submissions");
     }
 
